@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 10px rgb(20, 19, 20);
+    background-color: rgb(241, 237, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 0px 5%;
+}
+.header button{
+    padding: 10px 25px;
+    background: blue;
+    outline: none;
+    color: rgb(247, 243, 243);
+    cursor: pointer;
+    border-radius:5px;
+    transition: all ease-in 0.4s;
+    border: 2px solid rgb(36, 34, 34);
+}
+.header button:disabled{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    cursor: no-drop;
+}
+.container{
+    position: absolute;
+    width: 400px;
+    max-height: 450px;
+    background-color: rgb(245, 241, 237);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    box-shadow: 2px 5px 20px rgb(34, 31, 31);
+    padding: 8px 20px;
+    transition: all ease-in 0.4s;
+}
+.container .loading{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    opacity: 1;
+}
+.container .loading p{
+    color: black;
+}
+.container .profile{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .profile img{
+    width: 90px;
+    height: 90px;
+    border-radius:60%;
+    border: 5px solid rgb(26, 22, 23);
+    object-fit: cover;
+}
+.container .info{
+    opacity: 0;
+    display: none;
+    transform: all ease-in 0.4s;
+}
+.container .info label{
+    font-size: 1.05em;
+    font-weight: 600;
+}
+.container .info p{
+    font-size: 0.94em;
+}
+.container .info .field{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container .info .row-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    margin-bottom:10px;
+}
+.container .info .row-field .field1{
+    width: 50%;
+}
